@@ -1,0 +1,143 @@
+.cont {
+    display: flex;
+    height: 100vh; 
+    justify-content: flex-start; 
+  }
+  
+  .right {
+    border: 1px solid black;
+  }
+  
+  .left {
+    flex: 0 0 300px; 
+    height: 450px; 
+    margin-left: 5%; 
+    border: 1px solid white;
+  }
+  
+  .right {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-left: 1px solid white;
+  }
+  
+  .right-top {
+    flex: 1;
+    border: 1px solid black;
+  }
+  
+  @media (max-width: 768px) {
+    .cont {
+      flex-direction: column;
+    }
+  
+    .left,
+    .right {
+      flex: none;
+      width: 100%;
+      margin: 0; 
+    }
+  
+    .left {
+      height: 400px; 
+    }
+  
+    .right {
+      height: calc(100vh - 200px); 
+    }
+  }
+  
+
+.form_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_data h1{
+    font-size: 34px;
+    color: whitesmoke;
+}
+
+.form_data p{
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top:2px;
+}
+
+.form_data{
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form_data .form_input input{
+    width: 500px;;
+    padding: 11px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 14px;
+    margin-top: 9px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-display: whitesmoke;
+    
+}
+.form_data  .form_input label{
+    color: whitesmoke;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.form_data  .form_input #textarea{
+  width: 500px;;
+  padding: 11px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 14px;
+  margin-top: 9px;
+  margin-right:10px;
+  font-size: 14px;
+  font-display: whitesmoke;
+}
+
+.form_data  .form_input input:focus{
+    border:2px solid rgba(62, 147, 217, 0.6);
+}
+
+
+.form_data  .form_input input::placeholder{
+    color:black;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+
+ .button{
+    display:block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:#1a365d;
+    color:whitesmoke;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+
+ .btn:hover{
+    background-color: whitesmoke;
+}
+
+
